@@ -1,0 +1,31 @@
+[project]
+name = "planetary-system-stacker"
+version = "1.0.0"
+description = "PlanetarySystemStacker"
+readme = "README.md"
+authors = [
+    { name = "Rolf Hempel", email = "rolf6419@gmx.de" }
+]
+license = { text = "GPL-3.0-only" }
+requires-python = ">=3.13"
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "psutil",
+    "PyQt6>=6.2",
+    "scipy",
+    "astropy",
+    "scikit-image",
+    "opencv-python"
+]
+
+[project.urls]
+Homepage = "https://github.com/derchr/PlanetarySystemStacker"
+
+[project.scripts]
+PlanetarySystemStacker = "planetary_system_stacker.planetary_system_stacker:main"
+
+[build-system]
+requires = ["uv-build<0.12.0"]
+build-backend = "uv_build"
